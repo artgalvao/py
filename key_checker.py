@@ -1,8 +1,8 @@
-import key_checker
+# Using Keyboard module in Python
+import keyboard
+import sys
+
 while True:
-    try:
-        if key_checker.is_pressed('q'):
-            print('You Pressed A Key!')
-            break 
-    except:
-        break 
+    if keyboard.is_pressed ('q'):
+        print('Você pressionou uma tecla!')
+        break
